@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial, sans-serif';
+    background: linear-gradient(135deg, #f8f9fa, #67aff7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    color: #343a40;
+}
+
+.my-recipe-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 100px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.my-recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.my-recipe-title {
+    background: linear-gradient(135deg, #6c757d, #343a40);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.my-recipe-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #dee2e6;
+    transition: transform 0.3s;
+}
+
+.my-recipe-image img:hover {
+    transform: scale(1.05);
+}
+
+.my-recipe-details {
+    padding: 20px;
+}
+
+.my-recipe-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.my-ingredients-list, .my-steps-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.my-ingredients-list li, .my-steps-list li {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.my-ingredients-list li:hover, .my-steps-list li:hover {
+    background: #e2e6ea;
+    transform: translateX(5px);
+}
+
+.my-show-steps-button {
+    background: linear-gradient(135deg, #6c757d, #343a40);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.my-show-steps-button:hover {
+    background: linear-gradient(135deg, #5a6268, #2d3135);
+    transform: scale(1.1);
+}
+
+.my-steps-list {
+    display: none;
+}
